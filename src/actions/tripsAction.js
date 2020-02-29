@@ -16,7 +16,7 @@
 export const fetchTrips = () => {
   return dispatch => {
     dispatch({ type: 'LOADING_TRIPS'})
-    return fetch('https://safe-waters-79087.herokuapp.com/https://kayaks-backend-api.herokuapp.com/trips')
+    return fetch('https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/trips')
 
     .then(resp => resp.json())
     // .then(console.log)
@@ -30,10 +30,10 @@ export const fetchTrips = () => {
 export const addTrip = trip => {
   console.log('addTrip', trip)
   return dispatch => {
-    return fetch('https://kayaks-backend-api.herokuapp.com/trips',{
+    return fetch('https://infinite-lowlands-70811.herokuapp.com/trips',{
       method: 'POST',
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        // 'Access-Control-Allow-Origin': '*',
         // 'Access-Control-Allow-Origin': 'https://kayaking-frontend.herokuapp.com',
 
         'Content-Type': 'application/json',
@@ -41,6 +41,7 @@ export const addTrip = trip => {
       body: JSON.stringify(trip),
     })
     .then(resp => resp.json())
+    // .then(console.log)
     .then(trip => {
       // (console.log('add trip',trip))
       dispatch({type:'ADD_TRIP', trip:trip})

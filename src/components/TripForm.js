@@ -10,6 +10,8 @@ class TripForm extends React.Component {
     water_type: "",
     start_date: new Date(),
     end_date: new Date()
+    // start_date: '',
+    // end_date: ''
   }
 
   handleOnSubmit = (e) => {
@@ -42,11 +44,11 @@ class TripForm extends React.Component {
         <div className="ui form">
           <div className="fields">
             <div className="five wide field">
-              <input onChange={this.handleIfChange} value={this.state.name}  type="text" name="name"  placeholder="name" autoComplete="off"/><br/>
+              <input onChange={this.handleIfChange} value={this.state.name}  type="text" name="name"   placeholder="name" autoComplete="off"/><br/>
             </div>
             <div className="three wide field">
               <label>water type
-                <select onChange={this.handleIfChange} value={this.state.water_type} type="text" name="water_type" placeholder="water type" autoComplete="off">
+                <select onChange={this.handleIfChange} value={this.state.water_type} type="text"  name="water_type" placeholder="water type" autoComplete="off">
                   <option value='select'>select below</option>
                   <option value="bay">bay</option>
                   <option value="lake">lake</option>
@@ -56,10 +58,10 @@ class TripForm extends React.Component {
               </label>
             </div>
             <div className="three wide field">
-              <DateInput onChange={this.handleOnChange} type={this.DateInput} value={this.state.start_date} animation='off' iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput} value={this.state.start_date} animation='off'  dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
             </div>
             <div className="three wide field">
-              <DateInput onChange={this.handleOnChange} type={this.DateInput} name="end_date" animation='off' placeholder="end date" value={this.state.end_date} iconPosition="left" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput} name="end_date" animation='off' placeholder="end date" dateformat="MM-DD-YYYY" value={this.state.end_date} iconPosition="left" autoComplete="off"/>
 
             </div>
             <div className="two wide field">

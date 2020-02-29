@@ -24,7 +24,7 @@ class CommentsContainer extends React.Component{
   }
 
   render () {
-    console.log(this.props, this.props.tripId)
+    console.log(this.props, this.props.tripId, 'comments',this.props.tripId.comments, 'props.comments',this.props.comments)
     const tripId = this.props.tripId
     // console.log('contentcon')
 
