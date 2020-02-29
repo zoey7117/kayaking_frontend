@@ -2,20 +2,23 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addTrip} from '../actions/tripsAction'
 import {DateInput} from 'semantic-ui-calendar-react';
+import moment from 'moment'
+
 
 class TripForm extends React.Component {
 
   state = {
     name: '',
     water_type: "",
-    start_date: new Date(),
-    end_date: new Date()
+    start_date: moment().format("MM DD YY"),
+    end_date: moment().format("MM DD YY")
     // start_date: '',
     // end_date: ''
   }
 
   handleOnSubmit = (e) => {
     e.preventDefault()
+
     this.props.addTrip(this.state)
     this.setState({name: '', water_type: ''})
     this.props.history.push('/');
@@ -58,7 +61,10 @@ class TripForm extends React.Component {
               </label>
             </div>
             <div className="three wide field">
-              <DateInput onChange={this.handleOnChange} type={this.DateInput} value={this.state.start_date} animation='off'  dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput}
+
+
+                value={this.state.start_date} animation='off'  dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
             </div>
             <div className="three wide field">
               <DateInput onChange={this.handleOnChange} type={this.DateInput} name="end_date" animation='off' placeholder="end date" dateformat="MM-DD-YYYY" value={this.state.end_date} iconPosition="left" autoComplete="off"/>
