@@ -1,12 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addTrip} from '../actions/tripsAction'
-// import {DateInput} from 'semantic-ui-calendar-react';
-import moment from 'moment'
-import {DatePicker} from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
-
+import {DateInput} from 'semantic-ui-calendar-react';
 
 class TripForm extends React.Component {
 
@@ -19,30 +14,18 @@ class TripForm extends React.Component {
     // end_date: ''
   }
 
-
-
-  handleChange = date => {
-   this.setState({
-     start_date: date,
-     end_date: date,
-   });
- };
-
-
-
   handleOnSubmit = (e) => {
     e.preventDefault()
-
     this.props.addTrip(this.state)
     this.setState({name: '', water_type: ''})
     this.props.history.push('/');
   }
 
-  // handleOnChange = (e, {name, value}) => {
-  //   if (this.state.hasOwnProperty(name)) {
-  //     this.setState({[name]: value});
-  //   }
-  // }
+  handleOnChange = (e, {name, value}) => {
+    if (this.state.hasOwnProperty(name)) {
+      this.setState({[name]: value});
+    }
+  }
 
   handleIfChange = (e) => {
     this.setState({
@@ -75,11 +58,10 @@ class TripForm extends React.Component {
               </label>
             </div>
             <div className="three wide field">
-              <DatePicker selected={this.state.start_date} onChange={this.handleChange} type={this.DateInput}
-                value={this.state.start_date} animation='off'  dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput} value={this.state.start_date} animation='off'  dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
             </div>
             <div className="three wide field">
-              <DatePicker selected={this.state.end_date}onChange={this.handleChange} type={this.DateInput} name="end_date" animation='off' placeholder="end date" dateformat="MM-DD-YYYY" value={this.state.end_date} iconPosition="left" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput} name="end_date" animation='off' placeholder="end date" dateformat="MM-DD-YYYY" value={this.state.end_date} iconPosition="left" autoComplete="off"/>
 
             </div>
             <div className="two wide field">
@@ -93,4 +75,4 @@ class TripForm extends React.Component {
 
 }
 
-export default connect(null, {addTrip})(TripForm)
+export default connect(null, {addTrip, DateInput})(TripForm)

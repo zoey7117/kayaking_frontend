@@ -27,15 +27,11 @@ class Trips extends React.Component {
    this.setState({ width: window.innerWidth });
  }
 
- //  renderTrips (trips) {
- //   return trips.map((trip, index) =>
- //     <Trip key={trip.id} trip={trip} deleteTrip={this.props.deleteTrip}/>
- //   )
- // }
+
  renderTrips (trips) {
    const tripSort = trips.sort((a, b) => {
-     if (a.start_date < b.start_date) {return 1}
-     if (a.start_date > b.start_date) {return -1}
+     if (a.name < b.name) {return -1}
+     if (a.name > b.name) {return 1}
      return 0
 
    })
