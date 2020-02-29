@@ -53,24 +53,8 @@ export const deleteTrip = id => {
   console.log('deleteTrip', id)
   return dispatch => {
     dispatch({ type: 'DELETE_TRIP', id})
-    fetch(`https://safe-waters-79087.herokuapp.com/https://kayaks-backend-api.herokuapp.com/trips/${id}`,{
+    fetch(`https://infinite-lowlands-70811.herokuapp.com/trips/${id}`,{
       method: 'DELETE'
     })
   }
 }
-
-
-
-
-// export const getMyTrips = id => {
-//     return dispatch => {
-//         dispatch({ type: 'GET_MY_TRIPS'})
-//         return fetch(`https://safe-waters-79087.herokuapp.com/https://kayaks-backend-api.herokuapp.com/trips/${id}`,{
-//             method: 'GET',
-//           })
-//           .then(resp => resp.json())
-//           .then(resp => {
-//               dispatch(getMyTrips())
-//             })
-//           }
-//         }
