@@ -14,7 +14,7 @@ export const addComment = comment => {
   // console.log('addComment', comment)
   return dispatch => {
 
-    return fetch('https://infinite-lowlands-70811.herokuapp.com/comments', {
+    return fetch('https://safe-waters-79087.herokuapp.com/https://kayaking-backend.netlify.com', {
       method: 'POST',
       headers: {
         // 'Access-Control-Allow-Origin': '*',
@@ -41,7 +41,7 @@ export const deleteComment = id => {
   // console.log('deleteComment', id)
   return dispatch => {
     dispatch({ type: 'DELETE_COMMENT', id})
-    return fetch(`https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/comments/${id}`,{
+    return fetch(`https://safe-waters-79087.herokuapp.com/https://kayaking-backend.netlify.com/${id}`,{
       method: 'DELETE'
     })
   }

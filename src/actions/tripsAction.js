@@ -16,7 +16,7 @@
 export const fetchTrips = () => {
   return dispatch => {
     dispatch({ type: 'LOADING_TRIPS'})
-    return fetch('https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/trips')
+    return fetch('https://safe-waters-79087.herokuapp.com/https://kayaking-backend.netlify.com/trips')
 
     .then(resp => resp.json())
     // .then(console.log)
@@ -30,7 +30,7 @@ export const fetchTrips = () => {
 export const addTrip = trip => {
   console.log('addTrip', trip)
   return dispatch => {
-    return fetch('https://infinite-lowlands-70811.herokuapp.com/trips',{
+    return fetch('https://kayaking-backend.netlify.com/trips',{
       method: 'POST',
       headers: {
         // 'Access-Control-Allow-Origin': '*',
@@ -53,7 +53,7 @@ export const deleteTrip = id => {
   console.log('deleteTrip', id)
   return dispatch => {
     dispatch({ type: 'DELETE_TRIP', id})
-    fetch(`https://infinite-lowlands-70811.herokuapp.com/trips/${id}`,{
+    fetch(`https://kayaking-backend.netlify.com/trips/${id}`,{
       method: 'DELETE'
     })
   }
