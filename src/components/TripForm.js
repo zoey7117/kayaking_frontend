@@ -58,7 +58,7 @@ class TripForm extends React.Component {
               </label>
             </div>
             <div className="three wide field">
-              <DateInput onChange={this.handleOnChange} type={this.DateInput} dateFormat="MM-DD-YY" value={this.state.start_date} animation='off'  iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
+              <DateInput onChange={this.handleOnChange} type={this.DateInput} dateFormat="MM-DD-YY" value={this.state.start_date.toString()} animation='off' dateformat="MM-DD-YYYY" iconPosition="left" name="start_date" placeholder="start date" autoComplete="off"/>
             </div>
             <div className="three wide field">
               <DateInput onChange={this.handleOnChange} type={this.DateInput} dateFormat="MM-DD-YY" name="end_date" animation='off' placeholder="end date"  value={this.state.end_date} iconPosition="left" autoComplete="off"/>
