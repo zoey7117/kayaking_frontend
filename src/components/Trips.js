@@ -46,7 +46,6 @@ class Trips extends React.Component {
 
   render () {
 
-    console.log(this.state, this.props)
     let isMobile
 let width = this.state.width
 width <= 500 ? isMobile = true : isMobile = false
