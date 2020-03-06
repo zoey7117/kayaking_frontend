@@ -9,17 +9,17 @@ import { fetchTrips } from '../actions/tripsAction'
 
 class TripsContainer extends React.Component {
 
+  componentDidMount(){
+    this.props.fetchTrips()
+  }
+
   componentDidUpdate(prevProps) {
-    // console.log('componentDidUpdate', this.props.trips.trips.length)
     if (this.props.trips.trips.length > prevProps.trips.trips.length) {
       this.props.fetchTrips(this.props.trips.trips);
     }
   }
+
   
-  componentDidMount(){
-    this.props.fetchTrips()
-  }
-  //
 
 
 
