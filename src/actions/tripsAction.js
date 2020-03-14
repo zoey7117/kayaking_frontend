@@ -16,7 +16,9 @@
 export const fetchTrips = () => {
   return dispatch => {
     dispatch({ type: 'LOADING_TRIPS'})
-    return fetch('https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/trips')
+    // return fetch('https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/trips')
+    return fetch('https://infinite-lowlands-70811.herokuapp.com/trips')
+
 
     .then(resp => resp.json())
     // .then(console.log)
