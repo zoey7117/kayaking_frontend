@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 /* .resize {
@@ -8,25 +9,26 @@
   z-index: -1;
 } */
 
-.ui.large.button  {
-  margin: .5% ;
+.ui.large.button {
+  margin: .5%;
 }
 
 .ui.form button {
-  margin: 1% ;
+  margin: 1%;
 }
 
 .ui.form button {
-  margin: 1% ;
+  margin: 1%;
 }
+
 .ui.form.logout button {
   text-align: center;
   margin-bottom: 5%;
 
 }
 
-.ui.small.button  {
-  margin: .5% ;
+.ui.small.button {
+  margin: .5%;
 }
 
 .style.head {
@@ -36,12 +38,12 @@
   padding: 10px
 }
 
-#main_head h1{
+#main_head h1 {
   font-family: 'Monofett', cursive;
   font-size: 70px;
   line-height: 80%;
   letter-spacing: .025em;
-  margin: 3% 0  3% 0;
+  margin: 3% 0 3% 0;
 }
 
 .ui.button:hover {
@@ -55,13 +57,13 @@
 
 
 hr {
-  border-top: 1px ;
+  border-top: 1px;
   color: #141414;
 }
 
 
 
-  .container {
+.ui.container {
   margin-top: 20px;
   align-items: center;
 }
