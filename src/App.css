@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .App {
 	text-align: center;
 	align-items: center;
@@ -51,10 +55,21 @@ hr {
 	border-top: 1px;
 	color: #141414;
 }
+#main_head {
+	width: 100vw;
+}
+.Navbar.desktop {
+	width: 100vw;
+}
 
 .ui.container {
-	margin-top: 20px;
+	display: flex;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	width: 80vw;
+	height: 100vh;
+	margin: auto;
 }
 @media (max-width: 500px) {
 }
