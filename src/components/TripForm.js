@@ -48,7 +48,7 @@ class TripForm extends React.Component {
 									type="text"
 									name="name"
 									placeholder="name"
-									autoComplete="off"
+									autoComplete="false"
 								/>
 								<br />
 							</div>
@@ -61,7 +61,7 @@ class TripForm extends React.Component {
 										type="text"
 										name="water_type"
 										placeholder="water type"
-										autoComplete="off"
+										autoComplete="false"
 									>
 										<option value="select">select below</option>
 										<option value="bay">bay</option>
@@ -81,7 +81,7 @@ class TripForm extends React.Component {
 									iconPosition="left"
 									name="start_date"
 									placeholder="start date"
-									autoComplete="off"
+									autoComplete="false"
 									hideMobileKeyboard={true}
 								/>
 							</div>
@@ -95,7 +95,7 @@ class TripForm extends React.Component {
 									iconPosition="left"
 									name="end_date"
 									placeholder="end date"
-									autoComplete="off"
+									autoComplete="false"
 									hideMobileKeyboard={true}
 								/>
 							</div>
