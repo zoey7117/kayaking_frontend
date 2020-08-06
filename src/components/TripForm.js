@@ -82,7 +82,7 @@ class TripForm extends React.Component {
 									name="start_date"
 									placeholder="start date"
 									autoComplete="false"
-									hideMobileKeyboard={true}
+									hideMobileKeyboard="true"
 								/>
 							</div>
 							<div className="three wide field">
@@ -96,7 +96,7 @@ class TripForm extends React.Component {
 									name="end_date"
 									placeholder="end date"
 									autoComplete="false"
-									hideMobileKeyboard={true}
+									hideMobileKeyboard="true"
 								/>
 							</div>
 							<div className="two wide field">
