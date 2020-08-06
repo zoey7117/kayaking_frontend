@@ -1,24 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTrip } from '../actions/tripsAction';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import { DateInput } from 'semantic-ui-calendar-react';
 
 class TripForm extends React.Component {
 	state = {
 		name: '',
 		water_type: '',
+		start_date: '',
+		end_date: ''
 		// start_date: '',
 		// end_date: ''
-		// start_date: '',
-		// end_date: ''
-		startDate: new Date()
-	};
-
-	handleChange = (date) => {
-		this.setState({
-			startDate: date
-		});
 	};
 
 	handleOnSubmit = (e) => {
@@ -28,11 +20,11 @@ class TripForm extends React.Component {
 		this.props.history.push('/');
 	};
 
-	// handleOnChange = (e, { name, value }) => {
-	// 	if (this.state.hasOwnProperty(name)) {
-	// 		this.setState({ [name]: value });
-	// 	}
-	// };
+	handleOnChange = (e, { name, value }) => {
+		if (this.state.hasOwnProperty(name)) {
+			this.setState({ [name]: value });
+		}
+	};
 
 	handleIfChange = (e) => {
 		this.setState({
@@ -80,12 +72,7 @@ class TripForm extends React.Component {
 								</label>
 							</div>
 							<div className="three wide field">
-								<DatePicker
-									selected={this.state.startDate}
-									onChange={this.handleChange}
-									autoComplete="off"
-								/>
-								{/* <DateInput
+								<DateInput
 									onChange={this.handleOnChange}
 									type={this.DateInput}
 									dateFormat="MM-DD-YY"
@@ -95,22 +82,22 @@ class TripForm extends React.Component {
 									name="start_date"
 									placeholder="start date"
 									autoComplete="off"
-								/> */}
+									hideMobileKeyboard={true}
+								/>
 							</div>
 							<div className="three wide field">
-								<DatePicker
-									selected={this.state.startDate}
-									onChange={this.handleChange}
+								<DateInput
+									onChange={this.handleOnChange}
+									type={this.DateInput}
+									dateFormat="MM-DD-YY"
+									value={this.state.end_date}
+									animation="off"
+									iconPosition="left"
+									name="end_date"
+									placeholder="end date"
 									autoComplete="off"
-									// name="start_date"
-									// placeholder="start date"
+									hideMobileKeyboard={true}
 								/>
-								{/* // <DateInput */}
-								{/* // onChange={this.handleOnChange}
-								// type={this.DateInput}
-								// dateFormat="MM-DD-YY" // value={this.state.end_date}
-								// animation="off" // iconPosition="left" // name="end_date" // placeholder="end date"
-								// autoComplete="off" // /> */}
 							</div>
 							<div className="two wide field">
 								<button type="submit" className="ui button">
@@ -125,4 +112,4 @@ class TripForm extends React.Component {
 	}
 }
 
-export default connect(null, { addTrip, DatePicker })(TripForm);
+export default connect(null, { addTrip, DateInput })(TripForm);
