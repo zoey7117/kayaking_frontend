@@ -1,23 +1,20 @@
-export default (state = {loading: false, comments: []}, action) => {
+export default (state = { loading: false, comments: [] }, action) => {
+	switch (action.type) {
+		case 'LOADING_COMMENTS':
+			return { ...state, loading: true };
 
-  switch(action.type) {
+		case 'FETCH_COMMENTS':
+			return { ...state, loading: false, comments: action.payload };
 
-    case 'LOADING_COMMENTS':
-      return {...state, loading: true}
+		case 'ADD_COMMENT':
+			const comment = action.comment;
+			return { ...state, comments: [ ...state.comments, comment ], loading: false };
 
-    case "FETCH_COMMENTS":
-      return {...state, loading: false, comments: action.payload}
+		case 'DELETE_COMMENT':
+			const comments = state.comments.filter((comment) => comment.id !== action.id);
+			return { ...state, comments };
 
-    case "ADD_COMMENT":
-      const comment = action.comment
-      // console.log('commentreducer',comment)
-      return {...state, comments: [...state.comments, comment], loading: false}
-
-    case "DELETE_COMMENT":
-      const comments = state.comments.filter(comment => comment.id !== action.id)
-      return {...state, comments}
-
-    default:
-      return state
-  }
-}
+		default:
+			return state;
+	}
+};
