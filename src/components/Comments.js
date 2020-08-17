@@ -9,7 +9,7 @@ class Comments extends React.Component {
 		));
 	}
 	render() {
-		console.log('comments', this.props.comments);
+		console.log('this.props.comments', this.props.comments);
 		return <div>{this.renderComments()}</div>;
 	}
 }

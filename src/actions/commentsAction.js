@@ -28,8 +28,8 @@ export const deleteComment = (id) => {
 	return (dispatch) => {
 		dispatch({ type: 'DELETE_COMMENT', id });
 		return fetch(
-			`https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/comments/${id}`,
-			// `https://infinite-lowlands-70811.herokuapp.com/comments/${id}`,
+			// `https://safe-waters-79087.herokuapp.com/https://infinite-lowlands-70811.herokuapp.com/comments/${id}`,
+			`https://infinite-lowlands-70811.herokuapp.com/comments/${id}`,
 			{
 				method: 'DELETE'
 			}
