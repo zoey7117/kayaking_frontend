@@ -30,6 +30,11 @@ ui.card > .content > .header:not(.ui),
 	font-size: 25px;
 }
 
+input,
+.ui.form input {
+	font-size: 100%;
+}
+
 .ui.small.button,
 .submit {
 	margin: .5%;
