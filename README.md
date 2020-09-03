@@ -1,4 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Come On Kayak App
+
+This App has two Github Repositories. This one is for the React-Redux frontend. The other one is for the Rails API backend (link below in instructions).
+
+You can use this app to view upcoming or past trips and make new ones. You can also comment on trips. There's a dictionary for common kayak lingo.
+
+
+
+
+## Instructions
+
+To run this app:
+
+PART ONE
+
+Go to https://github.com/zoey7117/kayaking-backend and follow the instructions to run the Come On Kayak back end. Then return here.
+
+PART TWO
+
+Clone this repo.
+
+Run npm install and npm start. You will be asked if you would like to run the program on another server. Type "Y" for Yes.
+
+Your browser will automatically launch the Come On Kayak app to its home page.
+
+You can shut down both servers by typing Control C in the terminal window where they are running.
+
 
 ## Available Scripts
 
