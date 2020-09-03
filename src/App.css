@@ -3,27 +3,44 @@
 	align-items: center;
 }
 
+body {
+	font-size: 16pt;
+}
+*:focus {
+	outline: none;
+}
 .ui.large.button {
 	margin: .5%;
 }
 
 .ui.form button {
 	margin: 1%;
+	font-size: 10pt;
+	background: rgba(0, 0, 0, .15);
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	border: none;
+	font-size: 10pt;
+	color: rgb(54, 51, 51);
 }
 
-.ui.form button {
-	margin: 1%;
+ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+	font-size: 25px;
 }
 
-.ui.form.logout button {
-	text-align: center;
-	margin-bottom: 5%;
-}
-
-.ui.small.button {
+.ui.small.button,
+.submit {
 	margin: .5%;
+	font-size: 11pt;
 }
-
+a {
+	font-size: 11pt;
+}
+h4 {
+	margin-top: 0;
+}
 .style.head {
 	font-family: sans-serif;
 	font-size: 20px;

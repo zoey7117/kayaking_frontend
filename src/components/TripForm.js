@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addTrip } from '../actions/tripsAction';
 import { DateInput } from 'semantic-ui-calendar-react';
+import { Button } from 'semantic-ui-react';
 
 class TripForm extends React.Component {
 	state = {
@@ -48,7 +49,8 @@ class TripForm extends React.Component {
 									type="text"
 									name="name"
 									placeholder="name"
-									autoComplete="false"
+									// autoComplete="false"
+									autoComplete="off"
 								/>
 								<br />
 							</div>
@@ -82,7 +84,8 @@ class TripForm extends React.Component {
 									iconPosition="left"
 									name="start_date"
 									placeholder="start date"
-									autoComplete="false"
+									// autoComplete="false"
+									autoComplete="off"
 									hideMobileKeyboard={true}
 								/>
 							</div>
@@ -96,14 +99,15 @@ class TripForm extends React.Component {
 									iconPosition="left"
 									name="end_date"
 									placeholder="end date"
-									autoComplete="false"
+									// autoComplete="false"
+									autoComplete="off"
 									hideMobileKeyboard="true"
 								/>
 							</div>
 							<div className="two wide field">
-								<button type="submit" className="ui button">
+								<Button type="submit" size="mini" className="ui button submit">
 									Submit
-								</button>
+								</Button>
 							</div>
 						</div>
 					</div>
