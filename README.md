@@ -1,4 +1,4 @@
-## Come On Kayak App
+## Come On Kayak 
 
 This App has two Github Repositories. This one is for the React-Redux frontend. The other one is for the Rails API backend (link below in instructions).
 
