@@ -13,7 +13,7 @@ To run this app:
 
 PART ONE
 
-Go to https://github.com/zoey7117/kayaking-backend and follow the instructions to run the Come On Kayak back end. Then return here.
+Go to https://github.com/zoey7117/kayaking-backend and follow the instructions to run the Come On Kayak backend. Then return here.
 
 PART TWO
 
