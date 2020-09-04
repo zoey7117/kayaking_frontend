@@ -1,8 +1,10 @@
 ## Come On Kayak 
 
+You can use this app to view upcoming or past trips and make new ones. You can also comment on trips. There's a dictionary for common kayak lingo.
+
+
 This App has two Github Repositories. This one is for the React-Redux frontend. The other one is for the Rails API backend (link below in instructions).
 
-You can use this app to view upcoming or past trips and make new ones. You can also comment on trips. There's a dictionary for common kayak lingo.
 
 
 
