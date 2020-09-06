@@ -29,9 +29,9 @@ You can shut down both servers by typing Control C in the terminal window where 
 
 
 ## Built with
-
-• React
+• React <br/>
 • Redux
+
 
 
 
