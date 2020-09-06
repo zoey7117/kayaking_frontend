@@ -1,4 +1,4 @@
-## Come On Kayak 
+# Come On Kayak 
 
 You can use this app to view upcoming or past trips and make new ones. You can also comment on trips. There's a dictionary for common kayak lingo.
 
