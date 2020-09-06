@@ -28,5 +28,10 @@ Your browser will automatically launch the Come On Kayak app to its home page.
 You can shut down both servers by typing Control C in the terminal window where they are running.
 
 
+## Built with
+
+React
+Redux
+
 
 
