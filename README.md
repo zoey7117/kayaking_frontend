@@ -20,7 +20,6 @@ Go to https://github.com/cynthiaeddy/kayaking-backend and follow the instruction
 PART TWO
 
 Clone this repo. 
-git clone https://github.com/cynthiaeddy/kayaking_frontend.git
 
 Run npm install and npm start. You will be asked if you would like to run the program on another server. Type "Y" for Yes.
 
