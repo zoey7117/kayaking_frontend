@@ -132,14 +132,14 @@ hr {
 		margin: 0;
 	}
 	.ui.container {
-		max-height: 76vh;
+		max-height: 75vh;
 		/* margin-bottom: 30px; */
 	}
 }
 @media (max-width: 500px) {
 	.ui.container {
 		margin-bottom: 50px;
-		max-height: 67vh;
+		max-height: 64vh;
 	}
 	.ui.cards {
 		/* width: 90%; */
