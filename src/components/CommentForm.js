@@ -36,7 +36,7 @@ class CommentForm extends React.Component {
 						/>
 						<br />
 						<br />
-						<button type="submit">submit</button>
+						<button type="submit">Submit</button>
 					</div>
 				</form>
 			</div>

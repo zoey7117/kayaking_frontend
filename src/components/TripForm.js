@@ -48,7 +48,7 @@ class TripForm extends React.Component {
 									value={this.state.name}
 									type="text"
 									name="name"
-									placeholder="name"
+									placeholder="new trip name"
 									// autoComplete="false"
 									autoComplete="off"
 								/>

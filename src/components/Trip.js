@@ -59,7 +59,7 @@ class Trip extends React.Component {
           </>) :
         <Card.Content >
         <CommentsContainer tripId={trip.id}/><br/>
-            <hr/><br/>
+            {/* <hr/><br/> */}
           <Button size='mini' onClick={this.toggleCard}>flip for front</Button>
         </Card.Content >
     }
