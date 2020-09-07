@@ -121,9 +121,9 @@ hr {
 		height: 100px;
 		margin-top: -10px;
 	}
-	/* .ui.two.cards {
+	.ui.two.cards {
 		margin: 20px;
-	} */
+	}
 	.ui.form .fields {
 		width: 700px;
 		margin: auto;
@@ -139,10 +139,14 @@ hr {
 @media (max-width: 500px) {
 	.ui.container {
 		margin-bottom: 50px;
+		max-height: 69vh;
 	}
 	.ui.cards {
 		/* width: 90%; */
 		margin: 0 20px;
+	}
+	.ui.two.cards {
+		margin: 0;
 	}
 	.ui.form {
 		height: 260px;
