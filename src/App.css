@@ -134,7 +134,6 @@ hr {
 	}
 	.ui.container {
 		max-height: 75vh;
-		/* margin-bottom: 30px; */
 	}
 	.ui.form.comments {
 		z-index: 1;
@@ -146,7 +145,6 @@ hr {
 		max-height: 64vh;
 	}
 	.ui.cards {
-		/* width: 90%; */
 		margin: 0 20px;
 	}
 	.ui.two.cards {
@@ -154,8 +152,6 @@ hr {
 	}
 	.ui.form {
 		height: 260px;
-		/* width: 90%; */
-		/* margin: 0 20px; */
 		margin-top: -10px;
 	}
 	.ui.form .fields {
