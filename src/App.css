@@ -116,21 +116,35 @@ hr {
 	align-items: center;
 } */
 
-@media only screen and (max-width: 991px) and(min-width: 768px) {
+@media only screen and (max-width: 991px) and(min-width: 750px) {
 	.ui.container {
 		/* width: 700px; */
 		margin-left: auto !important;
 		margin-right: auto !important;
 		width: 650px;
-		padding: 0 30px;
+		/* padding: 0 30px; */
 	}
 	.ui.form {
 		width: 100%;
-		padding: 0 40px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: ;
+	}
+	.ui.two.cards {
+		margin: 20px;
+	}
+	.ui.form .fields {
+		width: 700px;
+		margin: auto;
+	}
+	.ui.cards {
+		margin: 0;
 	}
 }
 @media (max-width: 500px) {
-	/* .ui.container {
-		padding-top: 0;
-	} */
+	.ui.container {
+		margin-bottom: 50px;
+	}
 }
