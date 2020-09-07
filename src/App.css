@@ -120,6 +120,7 @@ hr {
 		margin: 0;
 		height: 100px;
 		margin-top: -10px;
+		scroll-snap-points-y: ;
 	}
 	.ui.two.cards {
 		margin: 20px;
@@ -134,6 +135,9 @@ hr {
 	.ui.container {
 		max-height: 75vh;
 		/* margin-bottom: 30px; */
+	}
+	.ui.form.comments {
+		z-index: 1;
 	}
 }
 @media (max-width: 500px) {
