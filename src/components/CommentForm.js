@@ -25,7 +25,7 @@ class CommentForm extends React.Component {
 				<br />
 				<h4>add a comment!</h4>
 				<form onSubmit={this.handleOnSubmit}>
-					<div className="ui form">
+					<div className="ui form comments">
 						<input
 							onChange={this.handleOnChange}
 							value={this.state.content}

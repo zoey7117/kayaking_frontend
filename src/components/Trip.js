@@ -51,7 +51,7 @@ class Trip extends React.Component {
                 <Icon name='delete' onClick={() => this.props.deleteTrip(trip.id)}/> delete trip
                 </a>
 
-              <hr></hr>
+              <hr/><br/>
                 <Button size='mini' onClick={this.toggleCard}>flip for comments</Button>
           </Card.Content>
         </Card.Content>
@@ -59,7 +59,7 @@ class Trip extends React.Component {
           </>) :
         <Card.Content >
         <CommentsContainer tripId={trip.id}/><br/>
-            <hr></hr>
+            <hr/><br/>
           <Button size='mini' onClick={this.toggleCard}>flip for front</Button>
         </Card.Content >
     }
