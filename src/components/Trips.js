@@ -1,6 +1,6 @@
 import React from 'react';
 import Trip from './Trip';
-import { Card } from 'semantic-ui-react';
+import { Card, Container } from 'semantic-ui-react';
 
 class Trips extends React.Component {
 	constructor(props) {
@@ -64,7 +64,11 @@ class Trips extends React.Component {
 			itemsPerRow = 4;
 		}
 
-		return <Card.Group itemsPerRow={itemsPerRow}>{this.renderTrips(this.props.trips.trips)}</Card.Group>;
+		return (
+			<Container>
+				<Card.Group itemsPerRow={itemsPerRow}>{this.renderTrips(this.props.trips.trips)}</Card.Group>
+			</Container>
+		);
 	}
 }
 
