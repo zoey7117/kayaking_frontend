@@ -130,7 +130,7 @@ hr {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: ;
+		margin: 0;
 	}
 	.ui.two.cards {
 		margin: 20px;
