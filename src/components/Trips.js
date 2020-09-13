@@ -65,9 +65,11 @@ class Trips extends React.Component {
 		}
 
 		return (
-			<Container>
-				<Card.Group itemsPerRow={itemsPerRow}>{this.renderTrips(this.props.trips.trips)}</Card.Group>
-			</Container>
+			<div className="trips-outer-container">
+				<Container>
+					<Card.Group itemsPerRow={itemsPerRow}>{this.renderTrips(this.props.trips.trips)}</Card.Group>
+				</Container>
+			</div>
 		);
 	}
 }

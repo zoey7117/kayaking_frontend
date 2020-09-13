@@ -14,6 +14,10 @@ body {
 	position: relative;
 	max-height: 70vh;
 }
+.trips-outer-container {
+	display: flex;
+	width: 100vw;
+}
 
 .ui.container::-webkit-scrollbar {
 	display: none;
@@ -75,6 +79,12 @@ h4 {
 .ui.small.button {
 	margin: .5%;
 }
+.ui.large.button.nav-button:active {
+	/* content: ''; */
+	border: 2px solid rgba(0, 0, 0, .2);
+	transform: translateY(2px);
+	background: white;
+}
 
 .style.head {
 	font-family: sans-serif;
@@ -105,6 +115,7 @@ h4 {
 .ui.four.cards {
 	margin: 0;
 }
+
 hr {
 	border-top: 1px;
 	color: #141414;

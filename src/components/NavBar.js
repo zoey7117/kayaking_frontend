@@ -41,13 +41,19 @@ class NavBar extends React.Component {
 		return (
 			<div className={navbarStyle}>
 				<Link to="/">
-					<Button size={buttonSize}>home</Button>
+					<Button size={buttonSize} className="nav-button">
+						home
+					</Button>
 				</Link>
 				<Link to="/newtrip">
-					<Button size={buttonSize}>new trips</Button>
+					<Button size={buttonSize} className="nav-button">
+						new trips
+					</Button>
 				</Link>
 				<Link to="/dictionary">
-					<Button size={buttonSize}>dictionary</Button>
+					<Button size={buttonSize} className="nav-button">
+						dictionary
+					</Button>
 				</Link>
 				<br />
 				<br />
