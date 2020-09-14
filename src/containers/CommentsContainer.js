@@ -32,7 +32,6 @@ class CommentsContainer extends React.Component {
 			'tripId',
 			tripId
 		);
-		// console.log('contentcon')
 
 		return (
 			<div>
